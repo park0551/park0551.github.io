@@ -12,13 +12,22 @@
     ctrl + arrow keys to skip through words/page
     shift + arrow keys to select text
     *look up how to skip entire lines*
+    alt + arrow key to move line of code around
 -->
     <!-- Site header -->
     <header>
         <h1>The Roost Cafe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Main content of the page -->
     <main>
+        <!-- Adding on-page link -->
+        <a href="#treatofweek">Treat of the Week</a>
         <article>
             <h2>Our Story</h2>
             <!-- Adding image -->
@@ -58,7 +67,7 @@
             </ol>
         </section>
         <!-- Adding section for the description list -->
-        <section>
+        <section id="treatofweek">
             <h3>Drink of the Week</h3>
             <dl>
                 <dt>Hot Chocolate:</dt>
@@ -75,6 +84,8 @@
                     </ul>
                 </dd>
             </dl>
+            <!-- Adding an external link -->
+            <a href="https://www.bonappetit.com/recipe/bas-best-hot-chocolate" target="_blank">Get the Recipe</a>
         </section>
     </main>
     <!-- Site footer -->
