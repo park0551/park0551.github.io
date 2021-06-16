@@ -13,6 +13,7 @@ header, footer{
 
 #my-image{
     box-shadow: 0px 0px 2px 1px black;
+    /* When using my github link, the image does not appear in the browser, but it does appear with the Live Server. I couldn't figure out why, but hopefully you can see it. */
 }
 
 ul {
