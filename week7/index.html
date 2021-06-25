@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Roost Cafe - Home</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- 
+    tagname + tab to complete the tag 
+    ctrl + arrow keys to skip through words/page
+    shift + arrow keys to select text
+    *look up how to skip entire lines*
+    alt + arrow key to move line of code around
+-->
+    <!-- Site header -->
+    <header>
+        <h1>The Roost Cafe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content of the page -->
+    <main>
+        <!-- Adding on-page link -->
+        <a href="#treatofweek" class="orange-link">Treat of the Week</a>
+        <article>
+            <h2>Our Story</h2>
+            <!-- Adding image -->
+            <img src="images/coffee-shop.jpg" alt="coffee cup on pile of coffee beans">
+            <p>
+                The Roost is a cafe that first appears in <em>Animal Crossing: Wild World.</em> Brewster, a pigeon, is
+                the <abbr title="Chief Executive Officer">CEO</abbr> and head barista of the cafe. <em>Animal Crossing:
+                    New Horizons</em> is the 1<sup>st</sup> game since <em>Wild World</em> in which The Roost has not
+                been added.
+            </p>
+            <blockquote class="large-text">
+                Wait a second... The Roost doesn't exist in <em>New Horizons?!</em> <cite>- Mayor of Hiddenleaf</cite>
+            </blockquote>
+            <hr>
+            <section>
+                <h3>Hiddenleaf</h3>
+                <p>
+                    We are a local coffee shop based in Hiddenleaf. Our specialty is <b>organic fair-trade</b> coffee.
+                </p>
+            </section>
+        </article>
+        <aside>
+            <h3>Merchandise</h3>
+            <!-- Adding unordered list for merchandise -->
+            <ul>
+                <li>Normal Coffee Beans (500 Bells)</li>
+                <li>Good Coffee Beans (1000 Bells)</li>
+                <li>Superb Coffee Beans (2000 Bells)</li>
+            </ul>
+        </aside>
+        <!-- Adding section for the ordered list. li*number adds several list lines-->
+        <section>
+            <h3>Events</h3>
+            <ol>
+                <li>June 23<sup>rd</sup> - Blathers' Museum Fundraiser</li>
+                <li>July 27<sup>th</sup> - Live Music by K.K. Slider</li>
+            </ol>
+        </section>
+        <!-- Adding section for the description list -->
+        <section id="treatofweek">
+            <h3>Drink of the Week</h3>
+            <dl>
+                <dt>Hot Chocolate:</dt>
+                <dd>Cozy, chocolatey goodness with a dollop of homemade whipped cream.</dd>
+                <dt>Calories:</dt>
+                <dd>250</dd>
+                <dt>Ingredients:</dt>
+                <dd>
+                    <ul>
+                        <li>oat milk</li>
+                        <li>chocolate syrup</li>
+                        <li>cocoa powder</li>
+                        <li>whipped cream</li>
+                    </ul>
+                </dd>
+            </dl>
+            <!-- Adding an external link -->
+            <a href="https://www.bonappetit.com/recipe/bas-best-hot-chocolate" target="_blank" class="orange-link large-text">Get the Recipe</a>
+        </section>
+        <!-- Adding section for menu -->
+        <section>
+            <h3>Menu Specials</h3>
+            <table> 
+                <thead>
+                    <tr>
+                        <th colspan="2">Items</th>
+                        <th rowspan="2">Price</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Calories</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Banada Bread</td>
+                        <td>250</td>
+                        <td>&dollar; 6</td>
+                    </tr>
+                    <tr>
+                        <td>Oatmeal</td>
+                        <td>110</td>
+                        <td>&dollar; 8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        Copyright &copy; The Roost (Nintendo), 2021
+    </footer>
+</body>
+
+</html>

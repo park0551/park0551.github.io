@@ -1,0 +1,127 @@
+body{
+ color: darkslategrey; 
+ font-family: Arial, Helvetica, sans-serif;
+ /* Adding background image */
+ background-image: url(../images/white_brick_wall.png);
+}
+/* This is a comment. */
+h1{
+    color: peru;
+}
+
+p{
+  background-color: lightblue;
+}
+/* Selecting/targeting multiple elements to add same styles */
+h1, h2, h3, h4{
+    text-decoration: underline;
+}
+/* Selecting child elements */
+nav ul{
+    list-style: none;
+}
+/* Selecting child elements multiple levels */
+nav ul a{
+    color: inherit;
+    text-decoration: none;
+
+}
+/* Selecting element with id value */
+#treatofweek{
+    /* colour image repeat position-x position-y */
+    background: orange url(../images/bread.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+
+    font-size: 1.25rem;
+    /* 1.25 x 16 = 20px */
+
+    /* 1em = 20px (1 x font size) */
+    padding: 1em;
+
+    /* viewport based units vh and vw */
+    /* height: 100vh */
+
+    width: 50%;
+}
+/* Selecting elements with class value/name */
+.orange-link{
+    background-color: darkslategrey;
+    color: orange;
+    text-decoration: none;
+}
+
+.large-text{
+    font-size: 24px;
+}
+/* Child selector or direct child selector */
+
+article > p{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/* Adjacent sibling selector */
+h3+ul{
+    /* Thickness, style, colour */
+    border: 1px solid black;
+}
+
+/* Attribute selector */
+[href="#treatofweek"]{
+    font-weight: bold;
+}
+
+/* Using Pseudo Classes
+    Styling the navigation
+    LoVe HAte - Link, Visited, Hover, Active is the order you should write these in
+*/
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: orange;
+    box-shadow: -2px 2px 4px 2px black;
+    /* x, y, blur, spread, colour */
+}
+nav ul a:hover,
+nav ul a:focus{
+    text-decoration: underline;
+}
+nav ul a:active{
+    box-shadow: 0 0 4px 2px black;   
+}
+/* Position related selectors */
+
+/* First child and last child */
+
+aside ul li:first-child{
+    font-weight: bold;
+}
+
+section ol li:last-child{
+    font-weight: bold;
+}
+/* Styling tables */
+table{
+    border-collapse: collapse;
+}
+
+/* nth-child selector with odd/even keyword */
+tbody tr:nth-child(even){
+    background-color: #d5836c;
+}
+
+/* nth-child selector with n, where n is 0,1,2,3... */
+table th:nth-child(n),
+table td:nth-child(n){
+    border: 1px solid #000;
+}
+/* nth-child selector with a formula 
+remember n = 0,1,2,3, ... so:
+2n+1= 1,3,5,7, ...*/
+table td:nth-child(2n+1){
+background-color: rgba(0,0,0,0.2);
+}
