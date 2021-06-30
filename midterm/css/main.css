@@ -32,9 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-/* ol, ul {
-	list-style: none;
-} */
+
 blockquote, q {
 	quotes: none;
 }
@@ -48,8 +46,9 @@ table {
 	border-spacing: 0;
 }
 
-/* My CSS */
+/* <---------- My CSS ---------> */
 
+/* Styling the Body */
 body {
     width: 80%; 
     margin: 0 auto;
@@ -59,10 +58,12 @@ body {
     font-size: 1em;
 }
 
+/* Adding Margins to Main (to move it away from the navigation) */
 main{
-    padding: 20px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
+/* Styling the Title and Image (with Float) */
 h1{
     position: absolute;
     top: 55%;
@@ -84,6 +85,7 @@ img {
     width: 100%;
 }
 
+/* Styling the Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -91,15 +93,21 @@ img {
     position: relative;
 }
 
+/* Adding the Article Image (with Float) */
+.small-starfish{
+    width: 25%;
+    float: left;
+    padding: 0px 20px 20px 0px;
+}
+
+/* Styling the Article */
 h2{
     font-size: 2em;
     padding-bottom: 10px;
 }
 
-.small-starfish{
-    width: 25%;
-    float: left;
-    padding: 0px 20px 20px 0px;
+p{
+    margin: 2%;
 }
 
 
@@ -110,10 +118,11 @@ section {
     padding: 1%;
 }
 
+/* Styling the Aside (Facts About Starfish) */
 aside{
     box-sizing: border-box;
     width: 100%;
-    padding-left: 20px;
+    padding: 2em 2em 2em 1em;
     float: left;
 }
 
@@ -121,7 +130,7 @@ ul{
     padding-left: 20px;
 }
 
-
+/* Styling the Navigation */
 nav ul li {
     display: inline-block;
     width: 30%;
@@ -150,13 +159,70 @@ nav li:last-child{
     border-right: none;
 }
 
-aside h3{
+/* Styling the Aside and Section Headers */
+aside h3,
+section h3{
     font-size: 1.5em;
-    padding-bottom: 10px;
+    padding-bottom: 1em;
+    position: relative;
 }
 
+/* Styling the Section for the Contact Box */
+section{
+    position: relative;
+    box-sizing: border-box;
+    padding: 1em 1em 5em 1em;
+    clear: left;
+    margin: 0em 0em 5em 0em;
+}
+
+/* Styling the Contact Box and its Contents */
 .contact-box {
     border: 1px solid black;
+    padding: 1em;
 }
 
-/* figure out how to keep contact box in place (float left doesn't work - already tried) */
+.your-name{
+    box-sizing: inherit;
+    width: 100%;
+    margin: 1em 0em 1em 0em;
+}
+
+.your-email{
+    box-sizing: inherit;
+    width: 100%;
+    margin: 1em 0em 1em 0em;
+}
+
+.your-message{
+    box-sizing: inherit;
+    width: 100%;
+    height: 5rem;
+    margin: 1em 0em 1em 0em;
+}
+
+/* Styling the Radio Button Header */
+h4{
+    font-size: 1.3em;
+    padding: 1em 0em 1em 0em;
+}
+
+/* Styling the Button */
+button[type=submit] {
+    padding:5px 5px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    font-size: 0.6em;
+    padding: 1em 1em 1em 1em;
+    margin: 2em 1em 1em 0em;
+}
+
+/* Styling the Footer */
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 85%;
+    padding: 2em 0em 2em 0em;
+}
