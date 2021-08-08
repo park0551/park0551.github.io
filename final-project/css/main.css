@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------------------------------------------------------------
+                            custom styles
+------------------------------------------------------------------------ */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 4rem;
+    line-height: 6rem;
+}
+h2{
+    font-size: 3rem;
+
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1rem;
+}
+h5{
+    font-size: 1rem;
+}
+
+p{
+    margin: 1em 0;
+    line-height: 1.5rem;
+}
+
+/* .container{
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+/* -------------------Navigation-------------------- */
+
+.nav{
+    background-color: rgb(38, 38, 38);
+}
+
+.nav li{
+    text-align: center;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited{
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    color: goldenrod;
+}
+
+/* help getting logo to top left - is it flex? also need help with gold on hover */
+
+.nav a:hover,
+.nav a:focus,
+.nav a.current{
+    background-color: goldenrod;
+    color: inherit;
+}
+
+/* help with getting 'search' inside input field and spanning across */
+
+/* --------------------Main Banner----------------------- */
+
+.banner{
+    background: grey url(/final-project/images/main-banner.jpg) no-repeat center bottom;
+    background-size: cover;
+    height: 600px;
+    padding-top: 8em;
+}
+
+/* help with padding on h1? */
+
+.banner-content{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+}
+
+h1,
+.banner p{
+    color: white;
+}
+
+.connect-btn{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1.5em;
+    background: goldenrod;
+    text-decoration: none;
+    color: inherit;
+}
+
+a .im-care-right{
+    height: inherit;
+}
+
+
+/* how to get arrow to format properly? */
+
+/* ----------------------About------------------------------ */
+
+.about{
+    background:rgb(255, 239, 176);
+}
+
+.about-us{
+    padding: 1em;
+}
+
+.about img{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+/* -----------------------Our Services----------------------- */
+
+.cards{
+    margin: 0 auto;
+    margin: 1em;
+}
+
+.card{
+    background:rgb(255, 239, 176);
+    margin: 1em 0;
+}
+
+
+.cards h2{
+    padding-top: 1em;
+}
+
+.cards h3{
+    padding-top: 1em;
+    padding-left: 0.5em;
+}
+
+.cards p{
+    padding-left: 1em;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card .btn{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1.5em;
+    background: rgb(38, 38, 38);
+    text-decoration: none;
+    color: white;
+    margin: 1em;
+}
+
+/* ----------------------Our Vision------------------------- */
+
+.ourvision{
+    background: cornflowerblue url(/final-project/images/vision.jpg) no-repeat center;
+    background-size: cover;
+    padding: 1em;
+}
+
+.vision{
+    color: white;
+}
+
+.ourvision h3{
+    padding-top: 1em;
+}
+
+.ourvision a{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.5em;
+    border: 1px solid grey;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+/* -----------------------Our Team-------------------------- */
+
+.ourteam{
+    margin: 1em;
+}
+
+.ourteam img{
+    width: 100%;
+    display: block;
+}
+
+.team-info{
+    background: rgb(255, 239, 176);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.ourteam h2{
+    margin: 1em 0 0.5em 0;
+}
+
+.ourteam h3{
+    padding: 0.5em 0em 0em 0em;
+}
+
+.ourteam h4{
+    padding-top: 0.5rem;
+    border-bottom: 2px solid goldenrod;
+}
+
+/* ----------------------Contact----------------------------- */
+
+.contact{
+    position: relative;
+    box-sizing: border-box;
+    padding: 1em;
+    clear: left;
+}
+
+/* Styling the Contact Box and its Contents */
+.contact-box{
+    padding: 1em 0;
+}
+
+.full-name{
+    box-sizing: inherit;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.email{
+    box-sizing: inherit;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.message{
+    box-sizing: inherit;
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 1em;
+}
+
+button[type=submit] {
+    border: 1px solid goldenrod;
+    background-color: rgb(38, 38, 38);
+    font-size: 1em;
+    color: goldenrod;
+    padding: 0.25em 0.25em;
+}
