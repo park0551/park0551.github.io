@@ -52,55 +52,58 @@ table {
 ------------------------------------------------------------------------ */
 
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5{
+h1{
+    font-size: 3.25em;
+    line-height: 5rem;
     font-weight: bold;
 }
-
-h1{
-    font-size: 4rem;
-    line-height: 6rem;
-}
 h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
 
 }
 h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 h4{
-    font-size: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 h5{
     font-size: 1rem;
 }
 
 p{
+    font-size: 0.8rem;
     margin: 1em 0;
-    line-height: 1.5rem;
+    line-height: 1rem;
 }
 
-/* .container{
+.container{
     max-width: 1200px;
     margin: 0 auto;
-} */
+}
 
 /* -------------------Navigation-------------------- */
 
 .nav{
-    background-color: rgb(38, 38, 38);
+    background-color: #222;
+    padding: 1em;
 }
 
-.nav li{
+.nav a{
     text-align: center;
+}
+
+.nav img{
+    display: block;
+    width: 15%;
 }
 
 .nav a,
@@ -109,34 +112,40 @@ p{
     display: block;
     padding: 1em 0;
     text-decoration: none;
-    color: goldenrod;
+    color: #c78c06;
+    font-size: 0.8em;
 }
-
-/* help getting logo to top left - is it flex? also need help with gold on hover */
 
 .nav a:hover,
 .nav a:focus,
 .nav a.current{
-    background-color: goldenrod;
+    background-color: #c78c06;
     color: inherit;
 }
 
-/* help with getting 'search' inside input field and spanning across */
+.search{
+    display: flex;
+}
+
+.nav .search input{
+    flex-grow: 1;
+}
+
+/* need help with search bar */
 
 /* --------------------Main Banner----------------------- */
 
 .banner{
     background: grey url(/final-project/images/main-banner.jpg) no-repeat center bottom;
     background-size: cover;
-    height: 600px;
-    padding-top: 8em;
+    height: 350px;
+    padding-top: 3.25em;
 }
-
-/* help with padding on h1? */
 
 .banner-content{
     background: rgba(0, 0, 0, 0.5);
     padding: 1em;
+    padding-top: 2em;
 }
 
 h1,
@@ -148,13 +157,16 @@ h1,
     display: inline-block;
     box-sizing: border-box;
     padding: 1.5em;
-    background: goldenrod;
+    background: #c78c06;
     text-decoration: none;
     color: inherit;
 }
 
 a .im-care-right{
-    height: inherit;
+    vertical-align: middle;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -163,7 +175,7 @@ a .im-care-right{
 /* ----------------------About------------------------------ */
 
 .about{
-    background:rgb(255, 239, 176);
+    background:#ffe6ac;
 }
 
 .about-us{
@@ -183,7 +195,7 @@ a .im-care-right{
 }
 
 .card{
-    background:rgb(255, 239, 176);
+    background:#ffe6ac;
     margin: 1em 0;
 }
 
@@ -209,10 +221,10 @@ a .im-care-right{
     display: inline-block;
     box-sizing: border-box;
     padding: 1.5em;
-    background: rgb(38, 38, 38);
+    background: #222;
     text-decoration: none;
     color: white;
-    margin: 1em;
+    margin: 0em 0em 1em 1em;
 }
 
 /* ----------------------Our Vision------------------------- */
@@ -229,6 +241,7 @@ a .im-care-right{
 
 .ourvision h3{
     padding-top: 1em;
+    font-weight: 700;
 }
 
 .ourvision a{
@@ -253,22 +266,19 @@ a .im-care-right{
 }
 
 .team-info{
-    background: rgb(255, 239, 176);
+    background: #ffe6ac;
     padding: 1em;
     margin-bottom: 1em;
 }
 
 .ourteam h2{
-    margin: 1em 0 0.5em 0;
-}
-
-.ourteam h3{
-    padding: 0.5em 0em 0em 0em;
+    margin: 0em 0 0.5em 0;
 }
 
 .ourteam h4{
     padding-top: 0.5rem;
-    border-bottom: 2px solid goldenrod;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid #c78c06;
 }
 
 /* ----------------------Contact----------------------------- */
@@ -285,16 +295,22 @@ a .im-care-right{
     padding: 1em 0;
 }
 
+.contactbox h3{
+    padding-top: 1rem;
+}
+
 .full-name{
     box-sizing: inherit;
     width: 100%;
     margin-bottom: 1em;
+    margin-top: 0.25em;
 }
 
 .email{
     box-sizing: inherit;
     width: 100%;
     margin-bottom: 1em;
+    margin-top: 0.25em;
 }
 
 .message{
@@ -302,12 +318,60 @@ a .im-care-right{
     width: 100%;
     height: 5rem;
     margin-bottom: 1em;
+    margin-top: 0.25em;
 }
 
 button[type=submit] {
-    border: 1px solid goldenrod;
-    background-color: rgb(38, 38, 38);
+    border: 1px solid #222;
+    background-color: #222;
     font-size: 1em;
-    color: goldenrod;
+    color: #c78c06;
     padding: 0.25em 0.25em;
 }
+
+/* --------------------------Contact Us---------------------- */
+/* Styling the Hours of Operation */
+caption{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
+/* How to align hours of operation caption to the left? */
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+td{
+    border: 1px solid grey;
+    padding: 1em;
+    font-size: 0.8em;
+}
+
+thead tr{
+    background: #ffe6ac;
+}
+
+/* Styling the Location */
+.location h3{
+    padding-bottom: 0.5em;
+}
+
+iframe{
+    width: 100%;
+    height: 300px;
+}
+
+/* -------------------------Footer-------------------------- */
+/* Styling the Footer */
+footer{
+    background: #222;
+    padding: 0.5em 0 0.5em 0.75em;
+    color: #c78c06;
+}
+
+/* ------------------------Media Screens-------------------- */
